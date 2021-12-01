@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { ApolloProvider } from "@apollo/react-hooks"
 import ApolloClient from "apollo-boost"
 import Navbar from "./components/navbar.js"
+import Newportfolio from "./pages/newportfolio.js"
 
 
 function App() {
@@ -11,6 +12,11 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        {/* <Switch>
+          <Route exact path="/" component="newportfolio"></Route>
+        </Switch> */}
+
+        <Newportfolio />
       </Router>
 
 
